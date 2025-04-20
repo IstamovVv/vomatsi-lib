@@ -1,11 +1,20 @@
 {
-  "name": "@vomatsi/lib",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@istamovvv/lib",
+  "private": false,
+  "version": "0.0.2",
   "type": "module",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IstamovVv/vomatsi-lib.git"
+  },
+  "publishConfig": {
+    "@vomatsi:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
@@ -13,6 +22,9 @@
   },
   "dependencies": {
     "vue": "^3.5.13"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.1",
@@ -22,5 +34,13 @@
     "vite": "^6.3.1",
     "vite-plugin-dts": "^4.5.3",
     "vue-tsc": "^2.2.8"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.",
+  "bugs": {
+    "url": "https://github.com/IstamovVv/vomatsi-lib/issues"
+  },
+  "homepage": "https://github.com/IstamovVv/vomatsi-lib#readme",
+  "main": "./dist/index.js",
+  "author": "",
+  "license": "ISC"
 }
