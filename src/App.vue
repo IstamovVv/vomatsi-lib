@@ -1,0 +1,3 @@
+<template>
+  Vomatsi lib
+</template>
